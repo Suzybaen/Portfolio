@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Justin Toledano — Portfolio</title>
+  <meta name="description" content="Portfolio of Justin Toledano — developer, UI/UX enthusiast.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="nav container">
+      <div class="brand">
+        <div class="logo">JT</div>
+        <div>
+          <h1>Justin Toledano</h1>
+          <div style="font-size:12px;color:var(--muted)">Frontend • Backend</div>
+        </div>
+      </div>
+
+      <nav class="links">
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="intro">
+        <h2 id="hero-title">Hi, I'm Juss 👋</h2>
+        <p>Creative Full-Stack Developer who builds seamless web and mobile experiences.
+           I blend intuitive UI design, robust backend systems, and performance optimization to deliver high-quality, scalable products.
+           With a focus on clean code, efficient workflows, and user-centric solutions, I bring ideas to life from front to back.</p>
+        <div class="cta">
+          <button class="btn" onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})">Explore Projects</button>
+          <a class="resume-link" href="resume.pdf" download="Justin-Toledano-Resume.pdf" title="Download resume">Download Resume</a>
+        </div>
+
+        <div style="margin-top:18px; display:flex; gap:10px; align-items:center">
+         
+          <a class="icon-btn" href="https://www.facebook.com/justin.estelloso.tolidano" title="Facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M22 12.1C22 6.48 17.52 2 11.9 2S1.8 6.48 1.8 12.1C1.8 17.06 5.77 21.08 10.5 21.9v-7.03H8.08v-2.77h2.42V9.41c0-2.39 1.42-3.71 3.56-3.71 1.03 0 2.11.18 2.11.18v2.32h-1.19c-1.17 0-1.53.73-1.53 1.48v1.78h2.61l-.42 2.77h-2.19V22c4.73-.82 8.7-4.84 8.7-9.9z" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="#" title="Instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zM12 8.8a3.2 3.2 0 100 6.4 3.2 3.2 0 000-6.4zM18.4 6.3a.96.96 0 11-1.92 0 .96.96 0 011.92 0z" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="https://github.com/Suzybaen" title="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M12 .5a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.75-1.32-1.75-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.06 1.81 2.78 1.29 3.46.99.11-.77.42-1.29.76-1.59-2.67-.3-5.47-1.34-5.47-5.98 0-1.32.47-2.4 1.24-3.25-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.24a11.4 11.4 0 016 0c2.3-1.56 3.3-1.24 3.3-1.24.66 1.65.24 2.87.12 3.17.77.85 1.24 1.92 1.24 3.25 0 4.66-2.8 5.68-5.47 5.98.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0012 .5z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-labelledby="profile-name">
+        <div class="profile-name" id="profile-name">Justin Toledano</div>
+        <div class="profile-pic" role="img" aria-label="Profile picture of Justin Tolidano">
+          <img src="profile.jpg" alt="Justin Toledano">
+        </div>
+      </aside>
+    </section>
+
+    
+    <section id="skills" class="card">
+      <div class="section-title"><h2>Skills</h2><div class="muted">Proficiency</div></div>
+      <div class="skills-grid">
+        <div class="skill"><div class="label"><span>HTML & CSS</span><strong>55%</strong></div><div class="bar"><i style="--w:55%"></i></div></div>
+        <div class="skill"><div class="label"><span>JavaScript</span><strong>2%</strong></div><div class="bar"><i style="--w:2%"></i></div></div>
+        <div class="skill"><div class="label"><span>Flutter</span><strong>69%</strong></div><div class="bar"><i style="--w:69%"></i></div></div>
+        <div class="skill"><div class="label"><span>VB.Net</span><strong>89%</strong></div><div class="bar"><i style="--w:89%"></i></div></div>
+        <div class="skill"><div class="label"><span>Java</span><strong>87%</strong></div><div class="bar"><i style="--w:87%"></i></div></div>
+      </div>
+    </section>
+
+   <section id="education" class="card">
+  <div class="section-title">
+    <h2>Education</h2>
+    <div class="muted">Academic Background</div>
+  </div>
+
+  <div class="timeline">
+    <div class="edu-item">
+      <div class="dot"></div>
+      <div class="edu-content">
+        <h3>🎓 Bachelor of Science in Information Technology</h3>
+        <p><strong>University of Mindanao</strong> —Digos College</p>
+        <p class="muted">2022 – Present</p>
+        <p> Bachelor of Science in Information Technology Major in Buisness Analytics Specialized skills: VB.NET, Java, Flutter/dart, JavaScript, Phyton.</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="dot"></div>
+      <div class="edu-content">
+        <h3>🏫 Senior High School — Computer Programming</h3>
+        <p><strong>Southern Mindanao Computer College</strong></p>
+        <p class="muted">2019 – 2021</p>
+        <p>Specialized in Information and Communication Technology with emphasis on computer programming and multimedia design.</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="dot"></div>
+      <div class="edu-content">
+        <h3>📘 Junior High School</h3>
+        <p><strong>Digos City National High School</strong></p>
+        <p class="muted">2015 – 2019</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+  <section  id= "projects" class="projects-section" >
+  <h2 class="section-title">My Projects</h2>
+  <div class="project-grid">
+
+    
+    <div class="project-card">
+      <div class="project-gallery">
+        <img src="images/GoBus_Map.jpeg">
+        <img src="images/GoBus.jpeg">
+      </div>
+      <h3>Bus Navigation App</h3>
+      <p>Android app with route visualization, stop alerts, and live tracking. Built with Flutter, Google Maps, and Firebase.</p>
+    </div>
+
+    
+    <div class="project-card">
+      <div class="project-gallery">
+        <img src="images/dash.png">
+        <img src="images/splash.png">
+        <img src="images/prof_attri.png">
+      </div>
+      <h3>Smart Dashboard App (Android UI Project)</h3>
+      <p>A custom-designed Android dashboard interface that simulates a personalized mobile home screen.
+         The app provides quick access to various daily-use features such as 
+        Google Maps, Games, e-Wallet, Music, YouTube, and Browser — all from a single elegant dashboard.</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-gallery">
+        <img src="images/inventory_dash.jpeg">
+        <img src="images/inventory_part.jpeg">
+        <img src="images/inventory_categ.jpeg">
+        <img src="images/inventory-stockin.jpeg">
+        <img src="images/inventory-stockin.jpeg">
+      </div>
+      <h3>Pos/Inventory Management</h3>
+      <p>POS and inventory system featuring stock reports, in/out tracking, and role-based access. Developed using VB.NET and MySQL.</p>
+    </div>
+
+     <div class="project-card">
+      <div class="project-gallery">
+        <img src="images/regis_db.png">
+        <img src="images/regis_out.png">
+      </div>
+      <h3>Registration With Simple Crude</h3>
+      <p>A desktop-based CRUD (Create, Read, Update, Delete) application designed to manage student records efficiently.
+         The system allows users to add, update, delete, and search student information based on ID, name, or organization.
+         It provides an intuitive graphical interface for real-time record management and database synchronization.
+          Developed using VB.NET and MySQL.</p>
+    </div>
+
+
+  </div>
+</section>
+
+
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-image" id="modal-image">
+  <div class="modal-controls">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</div>
+
+
+
+ <section id="certificates" class="card">
+  <div class="section-title">
+    <h2>Certificates</h2>
+    <div class="muted">Click to preview</div>
+  </div>
+
+  <div class="cert-grid">
+
+    <div class="cert-item" data-large="certs/html_cert.jpg">
+      <div class="cert-img">
+        <img src="certs/html_cert.jpg" alt="HTML Certificate">
+      </div>
+      <div class="cert-info">
+        <h3>HTML Certificate</h3>
+        <p>Completed an introductory course on HTML fundamentals, covering web structure, tags, and semantic elements.</p>
+      </div>
+    </div>
+
+    <div class="cert-item" data-large="certs/coursbank_nav.jpg">
+      <div class="cert-img">
+        <img src="certs/coursbank_nav.jpg" alt="Course Bank Navigation">
+      </div>
+      <div class="cert-info">
+        <h3>Course Bank Navigation</h3>
+        <p>Certification for mastering Course Bank platform navigation and effective workspace organization.</p>
+      </div>
+    </div>
+
+    <div class="cert-item" data-large="certs/great_learning.jpg">
+      <div class="cert-img">
+        <img src="certs/great_learning.jpg" alt="Great Learning Certificate">
+      </div>
+      <div class="cert-info">
+        <h3>Great Learning Web Development</h3>
+        <p>Recognized for successfully completing a professional course in web development through Great Learning Academy.</p>
+      </div>
+    </div>
+
+    <div class="cert-item" data-large="certs/coursbank_des.jpg">
+      <div class="cert-img">
+        <img src="certs/coursbank_des.jpg" alt="Course Bank Designing">
+      </div>
+      <div class="cert-info">
+        <h3>Course Bank Designing</h3>
+        <p>Completed a certification on visual and UI design fundamentals within the Course Bank platform.</p>
+      </div>
+    </div>
+
+     <div class="cert-item" data-large="certs/CSSEssentials_1.png">
+      <div class="cert-img">
+        <img src="certs/CSSEssentials_1.png" alt="CSS Essentials Certificate">
+      </div>
+      <div class="cert-info">
+        <h3>Cascading Style Sheet Certification</h3>
+        <p>Completed a certification on visual and UI design fundamentals within the Cisco Platform.</p>
+      </div>
+    </div>
+
+     <div class="cert-item" data-large="certs/JavaScriptEssentials-1.png">
+      <div class="cert-img">
+        <img src="certs/JavaScriptEssentials-1.png" alt="Cisco Certficate">
+      </div>
+      <div class="cert-info">
+        <h3>JavaScript Essentials Certificate</h3>
+        <p>Completed a certification on basic fundamentals within the Cisco Platform.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div id="certModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-content" id="certPreview"></div>
+</div>
+
+    
+    <section id="contact" class="card">
+      <div class="section-title"><h2>Contact Me</h2><div class="muted">Let's work together</div></div>
+      <form class="contact-form" onsubmit="event.preventDefault(); sendForm();">
+        <input class="input" id="name" placeholder="Your name" required>
+        <input class="input" id="email" type="email" placeholder="Your email" required>
+        <textarea class="input" id="message" rows="5" placeholder="Message" required></textarea>
+        <div style="display:flex; gap:10px; justify-content:center">
+          <button class="submit" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Juss Tolidano — Built with care.
+    </footer>
+
+  </main>
+
+  
+  <div class="fab">
+    <button id="themeBtn" title="Toggle theme">🌙</button>
+    <button id="topBtn" title="Scroll to top">↑</button>
+  </div>
+
+  
+  <div id="lightbox" role="dialog" aria-hidden="true" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); align-items:center; justify-content:center; z-index:2000;">
+    <img id="lightboxImg" src="" alt="Certificate preview" style="max-width:92%; max-height:86%; border-radius:10px; box-shadow:0 20px 50px rgba(0,0,0,0.7)">
+  </div>
+
+  <script>
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    
+    const skillEls = document.querySelectorAll('.bar > i');
+    const skillObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(e => {
+        if(e.isIntersecting){
+          const el = e.target;
+          const w = el.style.getPropertyValue('--w') || el.getAttribute('data-w') || '80%';
+          el.style.width = w;
+          obs.unobserve(el);
+        }
+      });
+    }, {threshold: .25});
+    skillEls.forEach(i=> skillObserver.observe(i));
+
+    
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightboxImg');
+    document.querySelectorAll('.cert-grid img').forEach(img=>{
+      img.addEventListener('click', ()=> {
+        const src = img.dataset.large || img.src;
+        lbImg.src = src;
+        lightbox.style.display = 'flex';
+        lightbox.setAttribute('aria-hidden','false');
+      });
+    });
+    lightbox.addEventListener('click', ()=> { lightbox.style.display = 'none'; lightbox.setAttribute('aria-hidden','true'); });
+
+    
+    const topBtn = document.getElementById('topBtn');
+    topBtn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+    window.addEventListener('scroll', () => {
+      topBtn.style.opacity = window.scrollY > 300 ? '1' : '0.0';
+      topBtn.style.pointerEvents = window.scrollY > 300 ? 'auto' : 'none';
+    });
+    topBtn.style.opacity = 0; topBtn.style.pointerEvents='none';
+
+    
+    const sections = document.querySelectorAll('main > section, main > .card, .hero');
+    const reveal = new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{
+        if(en.isIntersecting){ en.target.style.transform='translateY(0)'; en.target.style.opacity=1; reveal.unobserve(en.target); }
+      });
+    }, {threshold:.12});
+    sections.forEach(s => { s.style.opacity=0; s.style.transform='translateY(20px)'; reveal.observe(s); });
+
+    
+    const themeBtn = document.getElementById('themeBtn');
+    function setTheme(dark){
+      if(dark){ document.documentElement.style.setProperty('--bg','#041018'); document.body.classList.add('dark'); localStorage.setItem('jt-theme','dark'); themeBtn.textContent='☀️'; }
+      else { document.body.classList.remove('dark'); localStorage.setItem('jt-theme','light'); themeBtn.textContent='🌙'; }
+    }
+   
+    const cur = localStorage.getItem('jt-theme') || 'dark';
+    setTheme(cur === 'dark');
+
+    themeBtn.addEventListener('click', ()=> {
+      const dark = localStorage.getItem('jt-theme') !== 'dark';
+      setTheme(dark);
+    });
+
+   
+    function sendForm(){
+      const n = document.getElementById('name').value.trim();
+      alert('Thanks, ' + (n || 'there') + '! Your message is ready to send. (This is a demo — integrate a backend to actually send.)');
+      document.getElementById('name').value=''; document.getElementById('email').value=''; document.getElementById('message').value='';
+    }
+
+    
+    window.addEventListener('keydown', (e) => { if(e.key === 'Escape'){ lightbox.style.display='none'; lightbox.setAttribute('aria-hidden','true'); } });
+
+  </script>
+
+  <script>
+document.querySelectorAll('.cert-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const modal = document.getElementById('certModal');
+    const preview = document.getElementById('certPreview');
+    const file = this.getAttribute('data-large');
+
+    preview.innerHTML = '';
+    if (file.endsWith('.pdf')) {
+      preview.innerHTML = `<iframe src="${file}" frameborder="0"></iframe>`;
+    } else {
+      preview.innerHTML = `<img src="${file}" alt="Certificate Preview">`;
+    }
+
+    modal.style.display = 'flex';
+  });
+});
+
+document.querySelector('.close').addEventListener('click', () => {
+  document.getElementById('certModal').style.display = 'none';
+});
+
+window.addEventListener('click', e => {
+  const modal = document.getElementById('certModal');
+  if (e.target === modal) modal.style.display = 'none';
+});
+</script>
+
+<script>
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modal-image");
+const closeBtn = document.querySelector(".close");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let currentImages = [];
+let currentIndex = 0;
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+  img.addEventListener("click", e => {
+    const gallery = e.target.parentElement.querySelectorAll("img");
+    currentImages = Array.from(gallery);
+    currentIndex = currentImages.indexOf(e.target);
+    showImage();
+    modal.style.display = "flex";
+  });
+});
+
+function showImage() {
+  modalImg.src = currentImages[currentIndex].src;
+}
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  showImage();
+});
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+  showImage();
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+</script>
+
+
+
+</body>
+</html>
